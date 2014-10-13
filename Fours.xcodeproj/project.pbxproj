@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0022ED419EB5410008E637F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022ED319EB5410008E637F /* main.m */; };
+		D0022ED719EB5410008E637F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022ED619EB5410008E637F /* AppDelegate.m */; };
+		D0022EE219EB5410008E637F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0022EE019EB5410008E637F /* Main.storyboard */; };
+		D0022EE419EB5410008E637F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0022EE319EB5410008E637F /* Images.xcassets */; };
+		D0022EE719EB5410008E637F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0022EE519EB5410008E637F /* LaunchScreen.xib */; };
+		D0022EF319EB5410008E637F /* FoursTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022EF219EB5410008E637F /* FoursTests.m */; };
+		D0022F1519EB545C008E637F /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022EFE19EB545C008E637F /* GameBoard.m */; };
+		D0022F1619EB545C008E637F /* GameKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F0019EB545C008E637F /* GameKitHelper.m */; };
+		D0022F1719EB545C008E637F /* GameKitMatchData.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F0219EB545C008E637F /* GameKitMatchData.m */; };
+		D0022F1819EB545C008E637F /* GameKitTurnBasedMatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F0419EB545C008E637F /* GameKitTurnBasedMatchHelper.m */; };
+		D0022F1919EB545C008E637F /* GamePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F0619EB545C008E637F /* GamePiece.m */; };
+		D0022F1A19EB545C008E637F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F0819EB545C008E637F /* GameScene.m */; };
+		D0022F1B19EB545C008E637F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F0A19EB545C008E637F /* GameViewController.m */; };
+		D0022F1C19EB545C008E637F /* GridPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F0C19EB545C008E637F /* GridPosition.m */; };
+		D0022F1D19EB545C008E637F /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F0E19EB545C008E637F /* HomeScene.m */; };
+		D0022F1E19EB545C008E637F /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F1019EB545C008E637F /* Match.m */; };
+		D0022F1F19EB545C008E637F /* PlayerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F1219EB545C008E637F /* PlayerCache.m */; };
+		D0022F2019EB545C008E637F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = D0022F1419EB545C008E637F /* Utility.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0022EED19EB5410008E637F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0022EC619EB5410008E637F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0022ECD19EB5410008E637F;
+			remoteInfo = Fours;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0022ECE19EB5410008E637F /* Fours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fours.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0022ED219EB5410008E637F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0022ED319EB5410008E637F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0022ED519EB5410008E637F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0022ED619EB5410008E637F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0022EE119EB5410008E637F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0022EE319EB5410008E637F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0022EE619EB5410008E637F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D0022EEC19EB5410008E637F /* FoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0022EF119EB5410008E637F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0022EF219EB5410008E637F /* FoursTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoursTests.m; sourceTree = "<group>"; };
+		D0022EFC19EB545C008E637F /* FPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPosition.h; sourceTree = "<group>"; };
+		D0022EFD19EB545C008E637F /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoard.h; sourceTree = "<group>"; };
+		D0022EFE19EB545C008E637F /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
+		D0022EFF19EB545C008E637F /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
+		D0022F0019EB545C008E637F /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
+		D0022F0119EB545C008E637F /* GameKitMatchData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitMatchData.h; sourceTree = "<group>"; };
+		D0022F0219EB545C008E637F /* GameKitMatchData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitMatchData.m; sourceTree = "<group>"; };
+		D0022F0319EB545C008E637F /* GameKitTurnBasedMatchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitTurnBasedMatchHelper.h; sourceTree = "<group>"; };
+		D0022F0419EB545C008E637F /* GameKitTurnBasedMatchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitTurnBasedMatchHelper.m; sourceTree = "<group>"; };
+		D0022F0519EB545C008E637F /* GamePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePiece.h; sourceTree = "<group>"; };
+		D0022F0619EB545C008E637F /* GamePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePiece.m; sourceTree = "<group>"; };
+		D0022F0719EB545C008E637F /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		D0022F0819EB545C008E637F /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		D0022F0919EB545C008E637F /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		D0022F0A19EB545C008E637F /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		D0022F0B19EB545C008E637F /* GridPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridPosition.h; sourceTree = "<group>"; };
+		D0022F0C19EB545C008E637F /* GridPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridPosition.m; sourceTree = "<group>"; };
+		D0022F0D19EB545C008E637F /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
+		D0022F0E19EB545C008E637F /* HomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScene.m; sourceTree = "<group>"; };
+		D0022F0F19EB545C008E637F /* Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Match.h; sourceTree = "<group>"; };
+		D0022F1019EB545C008E637F /* Match.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Match.m; sourceTree = "<group>"; };
+		D0022F1119EB545C008E637F /* PlayerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCache.h; sourceTree = "<group>"; };
+		D0022F1219EB545C008E637F /* PlayerCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCache.m; sourceTree = "<group>"; };
+		D0022F1319EB545C008E637F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		D0022F1419EB545C008E637F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0022ECB19EB5410008E637F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0022EE919EB5410008E637F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0022EC519EB5410008E637F = {
+			isa = PBXGroup;
+			children = (
+				D0022ED019EB5410008E637F /* Fours */,
+				D0022EEF19EB5410008E637F /* FoursTests */,
+				D0022ECF19EB5410008E637F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0022ECF19EB5410008E637F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0022ECE19EB5410008E637F /* Fours.app */,
+				D0022EEC19EB5410008E637F /* FoursTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0022ED019EB5410008E637F /* Fours */ = {
+			isa = PBXGroup;
+			children = (
+				D0022EFC19EB545C008E637F /* FPosition.h */,
+				D0022EFD19EB545C008E637F /* GameBoard.h */,
+				D0022EFE19EB545C008E637F /* GameBoard.m */,
+				D0022EFF19EB545C008E637F /* GameKitHelper.h */,
+				D0022F0019EB545C008E637F /* GameKitHelper.m */,
+				D0022F0119EB545C008E637F /* GameKitMatchData.h */,
+				D0022F0219EB545C008E637F /* GameKitMatchData.m */,
+				D0022F0319EB545C008E637F /* GameKitTurnBasedMatchHelper.h */,
+				D0022F0419EB545C008E637F /* GameKitTurnBasedMatchHelper.m */,
+				D0022F0519EB545C008E637F /* GamePiece.h */,
+				D0022F0619EB545C008E637F /* GamePiece.m */,
+				D0022F0719EB545C008E637F /* GameScene.h */,
+				D0022F0819EB545C008E637F /* GameScene.m */,
+				D0022F0919EB545C008E637F /* GameViewController.h */,
+				D0022F0A19EB545C008E637F /* GameViewController.m */,
+				D0022F0B19EB545C008E637F /* GridPosition.h */,
+				D0022F0C19EB545C008E637F /* GridPosition.m */,
+				D0022F0D19EB545C008E637F /* HomeScene.h */,
+				D0022F0E19EB545C008E637F /* HomeScene.m */,
+				D0022F0F19EB545C008E637F /* Match.h */,
+				D0022F1019EB545C008E637F /* Match.m */,
+				D0022F1119EB545C008E637F /* PlayerCache.h */,
+				D0022F1219EB545C008E637F /* PlayerCache.m */,
+				D0022F1319EB545C008E637F /* Utility.h */,
+				D0022F1419EB545C008E637F /* Utility.m */,
+				D0022ED519EB5410008E637F /* AppDelegate.h */,
+				D0022ED619EB5410008E637F /* AppDelegate.m */,
+				D0022EE019EB5410008E637F /* Main.storyboard */,
+				D0022EE319EB5410008E637F /* Images.xcassets */,
+				D0022EE519EB5410008E637F /* LaunchScreen.xib */,
+				D0022ED119EB5410008E637F /* Supporting Files */,
+			);
+			path = Fours;
+			sourceTree = "<group>";
+		};
+		D0022ED119EB5410008E637F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0022ED219EB5410008E637F /* Info.plist */,
+				D0022ED319EB5410008E637F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0022EEF19EB5410008E637F /* FoursTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0022EF219EB5410008E637F /* FoursTests.m */,
+				D0022EF019EB5410008E637F /* Supporting Files */,
+			);
+			path = FoursTests;
+			sourceTree = "<group>";
+		};
+		D0022EF019EB5410008E637F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0022EF119EB5410008E637F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0022ECD19EB5410008E637F /* Fours */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0022EF619EB5410008E637F /* Build configuration list for PBXNativeTarget "Fours" */;
+			buildPhases = (
+				D0022ECA19EB5410008E637F /* Sources */,
+				D0022ECB19EB5410008E637F /* Frameworks */,
+				D0022ECC19EB5410008E637F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fours;
+			productName = Fours;
+			productReference = D0022ECE19EB5410008E637F /* Fours.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0022EEB19EB5410008E637F /* FoursTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0022EF919EB5410008E637F /* Build configuration list for PBXNativeTarget "FoursTests" */;
+			buildPhases = (
+				D0022EE819EB5410008E637F /* Sources */,
+				D0022EE919EB5410008E637F /* Frameworks */,
+				D0022EEA19EB5410008E637F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0022EEE19EB5410008E637F /* PBXTargetDependency */,
+			);
+			name = FoursTests;
+			productName = FoursTests;
+			productReference = D0022EEC19EB5410008E637F /* FoursTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0022EC619EB5410008E637F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Party Troll";
+				TargetAttributes = {
+					D0022ECD19EB5410008E637F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					D0022EEB19EB5410008E637F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = D0022ECD19EB5410008E637F;
+					};
+				};
+			};
+			buildConfigurationList = D0022EC919EB5410008E637F /* Build configuration list for PBXProject "Fours" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0022EC519EB5410008E637F;
+			productRefGroup = D0022ECF19EB5410008E637F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0022ECD19EB5410008E637F /* Fours */,
+				D0022EEB19EB5410008E637F /* FoursTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0022ECC19EB5410008E637F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0022EE719EB5410008E637F /* LaunchScreen.xib in Resources */,
+				D0022EE419EB5410008E637F /* Images.xcassets in Resources */,
+				D0022EE219EB5410008E637F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0022EEA19EB5410008E637F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0022ECA19EB5410008E637F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0022F1919EB545C008E637F /* GamePiece.m in Sources */,
+				D0022F1619EB545C008E637F /* GameKitHelper.m in Sources */,
+				D0022F1819EB545C008E637F /* GameKitTurnBasedMatchHelper.m in Sources */,
+				D0022F1E19EB545C008E637F /* Match.m in Sources */,
+				D0022F2019EB545C008E637F /* Utility.m in Sources */,
+				D0022ED719EB5410008E637F /* AppDelegate.m in Sources */,
+				D0022F1F19EB545C008E637F /* PlayerCache.m in Sources */,
+				D0022F1B19EB545C008E637F /* GameViewController.m in Sources */,
+				D0022F1719EB545C008E637F /* GameKitMatchData.m in Sources */,
+				D0022F1C19EB545C008E637F /* GridPosition.m in Sources */,
+				D0022F1519EB545C008E637F /* GameBoard.m in Sources */,
+				D0022F1A19EB545C008E637F /* GameScene.m in Sources */,
+				D0022ED419EB5410008E637F /* main.m in Sources */,
+				D0022F1D19EB545C008E637F /* HomeScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0022EE819EB5410008E637F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0022EF319EB5410008E637F /* FoursTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0022EEE19EB5410008E637F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0022ECD19EB5410008E637F /* Fours */;
+			targetProxy = D0022EED19EB5410008E637F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0022EE019EB5410008E637F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0022EE119EB5410008E637F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0022EE519EB5410008E637F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0022EE619EB5410008E637F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0022EF419EB5410008E637F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0022EF519EB5410008E637F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0022EF719EB5410008E637F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fours/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0022EF819EB5410008E637F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fours/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0022EFA19EB5410008E637F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FoursTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fours.app/Fours";
+			};
+			name = Debug;
+		};
+		D0022EFB19EB5410008E637F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FoursTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fours.app/Fours";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0022EC919EB5410008E637F /* Build configuration list for PBXProject "Fours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0022EF419EB5410008E637F /* Debug */,
+				D0022EF519EB5410008E637F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0022EF619EB5410008E637F /* Build configuration list for PBXNativeTarget "Fours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0022EF719EB5410008E637F /* Debug */,
+				D0022EF819EB5410008E637F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0022EF919EB5410008E637F /* Build configuration list for PBXNativeTarget "FoursTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0022EFA19EB5410008E637F /* Debug */,
+				D0022EFB19EB5410008E637F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0022EC619EB5410008E637F /* Project object */;
+}
